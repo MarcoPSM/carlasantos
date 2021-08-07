@@ -1,0 +1,17 @@
+{
+    "name": "marco/framework-php",
+    "description": "Personal PHP Framework",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Marco Martins",
+            "email": "marcopaulomartins@hotail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
