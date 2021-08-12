@@ -2,6 +2,7 @@
 
 
 use app\controllers\AuthController;
+use app\controllers\MapController;
 use app\controllers\SiteController;
 use app\controllers\TicTacToeController;
 use app\core\Application;
@@ -29,5 +30,9 @@ $app->router->post('/register', [AuthController::class, 'register']);
 
 $app->router->get('/TicTacToe', [TicTacToeController::class, 'init']);
 $app->router->post('/TicTacToe', [TicTacToeController::class, 'getMinMaxMove']);
+
+$app->router->get('/map', [MapController::class, 'init']);
+$app->router->get('/data', [MapController::class, 'getData']);
+
 
 $app->run();

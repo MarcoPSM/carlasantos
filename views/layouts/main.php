@@ -12,8 +12,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- OpenLayers -->
+    <link rel="stylesheet" href="/libs/v6.6.1-dist/ol.css">
+
     <!-- Local CSS-->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/tictactoe.css">
+    <link rel="stylesheet" href="/css/map.css">
+
 
     <title>Hello, world!</title>
 </head>
@@ -36,6 +41,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/TicTacToe">TicTacToe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/map">Map</a>
                 </li>
             </ul>
 
@@ -71,7 +79,9 @@
 -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script src="js/tictactoe.js"></script>
+<script src="js/map.js"></script>
+<script src="libs/v6.6.1-dist/ol.js"></script>
 
 </body>
 </html>
