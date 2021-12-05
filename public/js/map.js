@@ -72,7 +72,7 @@ function getBaseLayersGroup() {
 function getBusinessLayersGroup() {
 
     const source = new ol.source.Vector({
-        url: 'data',
+        url: '/data',
         format: new ol.format.GeoJSON()
     });
     const vectorLayer = new ol.layer.Vector({

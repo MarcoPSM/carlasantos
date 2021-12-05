@@ -1,4 +1,5 @@
 <?php
+
 ?>
 
 <!doctype html>
@@ -20,7 +21,7 @@
     <link rel="stylesheet" href="/css/map.css">
 
 
-    <title>Hello, world!</title>
+    <title><?php echo $this->title ?></title>
 </head>
 <body>
 
@@ -45,8 +46,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/map">Map</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cenas">Cenas</a>
+                </li>
             </ul>
 
+            <?php if (\app\core\Application::isGest()): ?>
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/login">Login</a>
@@ -55,12 +60,32 @@
                     <a class="nav-link" href="/register">Register</a>
                 </li>
             </ul>
+            <?php else: ?>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/profile">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/logout">
+                        Welcome <?php echo \app\core\Application::$app->user->getDisplayName() ?> [Logout]
+                    </a>
+                </li>
+            </ul>
+            <?php endif; ?>
+
 
         </div>
     </div>
 </nav>
 
 <div class="container">
+    <?php if (\app\core\Application::$app->session->getFlash('success')): ?>
+        <div class="alert alert-success">
+            <?php echo \app\core\Application::$app->session->getFlash('success') ?>
+        </div>
+    <?php endif; ?>
     {{content}}
 </div>
 

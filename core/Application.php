@@ -2,29 +2,61 @@
 
 namespace app\core;
 
+use app\core\db\Database;
+use app\core\db\DbModel;
+
 class Application
 {
     public static string $ROOT_DIR;
+
+    public string $layout = 'main';
+    public string $userClass;
     public  Router $router;
     public Request $request;
     public Response $response;
+    public Session $session;
+    public Database $db;
+    public ?UserModel $user;
+    public View $view;
+
     public static Application $app;
-    private Controller $controller;
+    private ?Controller $controller = null;
 
 
-    public function __construct($rootPath)
+    public function __construct($rootPath, array $config)
     {
         self::$ROOT_DIR = $rootPath;
         self::$app = $this;
         $this->request = new Request();
         $this->response = new Response();
+        $this->session = new Session();
         $this->router = new Router($this->request, $this->response);
+        $this->db = new Database($config['db']);
+        $this->view = new View();
+
+        $this->userClass = $config['userClass'];
+        $primaryValue = $this->session->get('user');
+        if ($primaryValue) {
+            $primaryKey = $this->userClass::primaryKey();
+            $this->user = $this->userClass::findOne([$primaryKey => $primaryValue]);
+        } else {
+            $this->user = null;
+        }
+
 
     }
 
     public function run()
     {
-        echo $this->router->resolve();
+        try {
+            echo $this->router->resolve();
+        } catch (\Exception $e) {
+            $this->response->setStatusCode($e->getCode());
+            echo $this->view->renderView('_error', [
+                'exception'=>$e
+            ]);
+        }
+
     }
 
     public function getController(): Controller
@@ -37,4 +69,23 @@ class Application
         $this->controller = $controller;
     }
 
+    public function login(UserModel $user): bool
+    {
+        $this->user = $user;
+        $primaryKey = $this->user->primaryKey();
+        $primaryValue = $this->user->{$primaryKey};
+        $this->session->set('user', $primaryValue);
+        return true;
+    }
+
+    public function logout()
+    {
+        $this->user = null;
+        $this->session->remove('user');
+    }
+
+    public static function isGest()
+    {
+        return !self::$app->user;
+    }
 }
