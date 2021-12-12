@@ -2,36 +2,57 @@
 
 namespace app\models;
 
-use app\core\Model;
+use app\core\db\DbModel;
 
-class ContactForm extends Model
+
+class ContactForm extends DbModel
 {
-
-    public string $subject = '';
+    public string $name = '';
     public string $email = '';
-    public string $body = '';
+    public string $subject = '';
+    public string $message = '';
+
+    public function save(): bool
+    {
+        $this->subject = 'Contacto pelo site';
+        return parent::save();
+    }
 
     public function rules(): array
     {
         return [
-            'subject' => [self::RULE_REQUIRED],
+            'name' => [self::RULE_REQUIRED],
             'email' => [self::RULE_REQUIRED],
-            'body' => [self::RULE_REQUIRED]
+            'message' => [self::RULE_REQUIRED]
         ];
     }
 
     public function labels(): array
     {
         return [
-            'subject' => 'Enter your subject',
-            'email' => 'Your email',
-            'body' => 'Message'
+            'name' => 'Nome',
+            'email' => 'Email',
+            'message' => 'Mensagem'
         ];
     }
 
     public function send()
     {
-        return true;
+        self::save();
     }
 
+    function tableName(): string
+    {
+        return 'contacts';
+    }
+
+    function attributes(): array
+    {
+        return ['email', 'name', 'subject', 'message'];
+    }
+
+    function primaryKey(): string
+    {
+        return 'id';
+    }
 }

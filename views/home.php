@@ -6,6 +6,7 @@ use app\core\View;
 
 $this->title = 'Home';
 ?>
+<!--
 <h1>Home</h1>
 
 <p>
@@ -16,3 +17,4 @@ $this->title = 'Home';
 </p>
 
 <h3>This is <?php echo $name ?></h3>
+-->

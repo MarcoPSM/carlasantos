@@ -39,16 +39,12 @@ $app->router->post('/login', [AuthController::class, 'login']);
 $app->router->get('/register', [AuthController::class, 'register']);
 $app->router->post('/register', [AuthController::class, 'register']);
 $app->router->get('/logout', [AuthController::class, 'logout']);
-$app->router->get('/profile', [AuthController::class, 'profile']);
 
-
-$app->router->get('/TicTacToe', [TicTacToeController::class, 'init']);
-$app->router->post('/TicTacToe', [TicTacToeController::class, 'getMinMaxMove']);
-
-$app->router->get('/map', [MapController::class, 'init']);
-$app->router->get('/data', [MapController::class, 'getData']);
-
-$app->router->get('/cenas', [SiteController::class, 'cenas']);
-
+$app->router->get('/carla', [SiteController::class, 'carla']);
+$app->router->get('/testemunhos', [SiteController::class, 'testemunhos']);
+$app->router->get('/vendido', [SiteController::class, 'vendido']);
+$app->router->get('/vendedores', [SiteController::class, 'vendedores']);
+$app->router->get('/compradores', [SiteController::class, 'compradores']);
+$app->router->post('/compradores', [SiteController::class, 'compradores']);
 
 $app->run();

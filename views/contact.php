@@ -5,6 +5,8 @@
 use app\core\form\Form;
 
 $this->title = 'Contact';
+$this->activeMenu = 'contact';
+
 ?>
 <h1>Contact</h1>
 

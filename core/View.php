@@ -2,10 +2,18 @@
 
 namespace app\core;
 
+use app\models\ContactForm;
+
 class View
 {
     public string $title = '';
+    public string $activeMenu = '';
 
+
+    public function isActive(string $menu): bool
+    {
+        return $menu === $this->activeMenu;
+    }
 
     public function renderView(string $view, $params = [])
     {
