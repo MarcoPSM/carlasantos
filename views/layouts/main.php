@@ -129,13 +129,14 @@
                         <!-- <span class="input-group-text">Mensagem</span> -->
                         <textarea class="form-control"  name="message" aria-label="Mensagem" placeholder="Mensagem" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary  btn-sm">Enviar</button>
 <!--
+                    <button type="submit" class="btn btn-primary  btn-sm">Enviar</button>
+-->
                     <button class="g-recaptcha btn btn-primary"
                             data-sitekey="6Le3rI8dAAAAAGTdvR2Ff089ROl0TljQV3qv-blr"
                             data-callback='onSubmit'
                             data-action='submit'>Enviar</button>
--->
+
                 </form>
 
             </div>
