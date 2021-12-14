@@ -36,9 +36,9 @@ class ContactForm extends DbModel
         ];
     }
 
-    public function send()
+    public function send():bool
     {
-        self::save();
+        return self::save();
     }
 
     function tableName(): string

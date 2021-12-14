@@ -27,7 +27,7 @@ class SiteController extends Controller
             $contact->loadData($request->getBody());
             if ($contact->validate() && $contact->send()) {
                 Application::$app->session->setFlash('success', 'Thank you for the contact.');
-                return $response->redirect('/contact');
+                $response->redirect('/contact');
             }
         }
         return $this->render('contact', [
@@ -47,23 +47,58 @@ class SiteController extends Controller
         }
     }
 
-    public function carla()
+    public function carla(Request $request, Response $response)
     {
+        $contact = new ContactForm();
+        if ($request->isPost()) {
+            $contact->loadData($request->getBody());
+            if ($contact->validate() && $contact->send()) {
+                Application::$app->session->setFlash('success', 'Thank you for the contact.');
+            }
+        }
+
         return $this->render('carla', []);
     }
 
-    public function testemunhos()
+    public function testemunhos(Request $request, Response $response)
     {
+        $contact = new ContactForm();
+        if ($request->isPost()) {
+            $contact->loadData($request->getBody());
+            if ($contact->validate() && $contact->send()) {
+                Application::$app->session->setFlash('success', 'Thank you for the contact.');
+            }
+        }
+
         return $this->render('testemunhos', []);
     }
-    public function vendido()
+
+    public function vendido(Request $request, Response $response)
     {
+        $contact = new ContactForm();
+        if ($request->isPost()) {
+            $contact->loadData($request->getBody());
+            if ($contact->validate() && $contact->send()) {
+                Application::$app->session->setFlash('success', 'Thank you for the contact.');
+            }
+        }
+
         return $this->render('vendido', []);
     }
-    public function vendedores()
+
+    public function vendedores(Request $request, Response $response)
     {
+        $contact = new ContactForm();
+        if ($request->isPost()) {
+            $contact->loadData($request->getBody());
+            if ($contact->validate() && $contact->send()) {
+                Application::$app->session->setFlash('success', 'Thank you for the contact.');
+            }
+        }
+
         return $this->render('vendedores', []);
     }
+
     public function compradores(Request $request, Response $response)
     {
         $contact = new ContactForm();
