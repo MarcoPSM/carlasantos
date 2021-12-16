@@ -77,9 +77,14 @@
 <!-- Footer -->
 <footer class="mt-auto fixed-bottom">
     <div class="container">
+        <div class="text-center p-4 text-light">
+            <a href="https://triomphe.pt/our_team/carla-santos-20">
+            <img src="img/triomphe-logo270x100.jpg" id="logohome">
+            </a>
+            <br>AMI 13164
+        </div>
         <!-- Copyright -->
         <div class="text-center p-4 text-light">
-            <img src="img/triomphe-logo270x100.jpg" width="20%" >
             © 2021 Copyright:
             <a class="text-reset fw-bold" href="http://zxcoders.eu/">ZXCoders.eu</a>
         </div>

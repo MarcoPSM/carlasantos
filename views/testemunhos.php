@@ -11,113 +11,22 @@ $this->activeMenu = 'testemunhos';
 
     <div  class="testemunho">
         <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo
+            Sempre atenta aos detalhes para fazer com que a experiência de compra seja algo agradável.
+            <br>- Manuel
         </p>
     </div>
 
     <div  class="testemunho">
         <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
+            Excelente Agente! Recomendo vivamente (Y)
+            <br>- André
         </p>
     </div>
 
     <div  class="testemunho">
         <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p>
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Individuo A
-        </p>
-    </div>
-
-    <div  class="testemunho">
-        <p class="testemunho">
-            Paragrafo com coisa e cenas relativas a determinados aspetos do pretendido
-            <br>- Fulano tal
+            Excelente profissional , na angariação do imóvel explicou como funciona a sua agência , apresentou um estudo de mercado referente a valores de imóveis na zona , e no dia seguinte já tinha o imóvel para venda no seu site online . Recomendo .
+            <br>- Miguel
         </p>
     </div>
 

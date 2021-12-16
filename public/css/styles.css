@@ -4,8 +4,11 @@ body {
 }
 .lisbon {
     background-image: url("../img/lisbon/lisbon1.jpg");
-
 }
+#logohome {
+    width: 40%;
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -61,4 +64,15 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_butto
 .fa-instagram {
     background: #125688;
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .lisbon {
+        background-image: url("../img/lisbon/lisbon1-mobile.jpg");
+
+    }
+    #logohome {
+        width: 60%;
+    }
+
 }

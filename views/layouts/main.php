@@ -141,7 +141,9 @@
 
             </div>
             <div class="col col-12 col-sm-4">
+                <a href="https://triomphe.pt/our_team/carla-santos-20">
                 <img src="img/triomphe-logo270x100.jpg" width="100%" >
+                </a>
             </div>
 
             <div class="col col-12 col-sm-4 text-center p-6 align-bottom">
