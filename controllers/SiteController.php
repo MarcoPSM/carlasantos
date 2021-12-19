@@ -7,6 +7,7 @@ use app\core\Controller;
 use app\core\Request;
 use app\core\Response;
 use app\models\ContactForm;
+use app\models\TestimonialsList;
 
 class SiteController extends Controller
 {
@@ -69,8 +70,10 @@ class SiteController extends Controller
                 Application::$app->session->setFlash('success', 'Thank you for the contact.');
             }
         }
-
-        return $this->render('testemunhos', []);
+        $testimonials = new TestimonialsList();
+        return $this->render('testemunhos', [
+            "model"=>$testimonials
+        ]);
     }
 
     public function vendido(Request $request, Response $response)

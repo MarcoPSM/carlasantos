@@ -1,13 +1,17 @@
 <?php
 /** @var $this \app\core\View */
+/** @var $model \app\models\TestimonialsList title */
+
 $this->title = 'Testemunhos';
 $this->activeMenu = 'testemunhos';
 
 ?>
 <h1>Testemunhos</h1>
+<?php echo $model->render(); ?>
 
+<!--
 <br>
-<div id="testemunhos-content">
+<div>
 
     <div  class="testemunho">
         <p>
@@ -31,3 +35,4 @@ $this->activeMenu = 'testemunhos';
     </div>
 
 </div>
+-->
