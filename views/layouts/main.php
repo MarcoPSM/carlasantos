@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg  bg-white">
     <div class="container-fluid">
         <a aria-current="page" href="/">
-            <img src="img/carlasantos-preto.png" width="200px">
+            <img src="img/carlasantos-preto.png" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
