@@ -2,9 +2,27 @@ body {
 /*    background-image: url("../img/lisbon.jpg"); */
 
 }
+
+.navbar {
+    background: rgba(255,255,255,0.4);
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    color: rgba(0,0,0,0.55);
+    border-color: rgba(0,0,0,0.1);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .lisbon {
     background-image: url("../img/lisbon/lisbon1.jpg");
 }
+
 #logohome {
     width: 40%;
 }
@@ -14,8 +32,14 @@ body {
 }
 
 #page-content {
-/*    height: 100%; */
+    /*    height: 100%; */
+    padding-top: 50px;
 }
+
+.p-top {
+    padding-top: 50px;
+}
+
 #carla-content {
     text-align: justify;
     text-justify: inter-word;
@@ -24,13 +48,19 @@ body {
 .container{
     max-width: 970px;
 }
+
 h1 {
     text-align: center;
 }
+
 .testemunho {
     text-align: justify;
 }
 
+ul {
+    padding-left: 5px;
+    margin-left: 5px;
+}
 /*
 REDES SOCIAIS
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2

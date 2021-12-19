@@ -28,10 +28,10 @@
 <header class="sticky-md-top">
     <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg  bg-white">
     <div class="container-fluid">
         <a aria-current="page" href="/">
-            <img src="img/preto1.png" width="200px">
+            <img src="img/carlasantos-preto.png" width="200px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($this->isActive('carla')) ? 'active' : '' ?>" aria-current="page" href="/carla"><b>Carla</b></a>
+                    <a class="link-dark nav-link <?php echo ($this->isActive('carla')) ? 'active' : '' ?>" aria-current="page" href="/carla"><b>Carla</b></a>
                 </li>
 <!--
                 <li class="nav-item">
@@ -48,16 +48,16 @@
                 </li>
 -->
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($this->isActive('testemunhos')) ? 'active' : '' ?>" href="/testemunhos"><b>Testemunhos</b></a>
+                    <a class="link-dark nav-link <?php echo ($this->isActive('testemunhos')) ? 'active' : '' ?>" href="/testemunhos"><b>Testemunhos</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($this->isActive('vendido')) ? 'active' : '' ?>" href="/vendido"><b>Vendido</b></a>
+                    <a class="link-dark nav-link <?php echo ($this->isActive('vendido')) ? 'active' : '' ?>" href="/vendido"><b>Vendido</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($this->isActive('vendedores')) ? 'active' : '' ?>" href="/vendedores"><b>Proprietários</b></a>
+                    <a class="link-dark nav-link <?php echo ($this->isActive('vendedores')) ? 'active' : '' ?>" href="/vendedores"><b>Proprietários</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($this->isActive('compradores')) ? 'active' : '' ?>" href="/compradores"><b>Compradores</b></a>
+                    <a class="link-dark nav-link <?php echo ($this->isActive('compradores')) ? 'active' : '' ?>" href="/compradores"><b>Compradores</b></a>
                 </li>
             </ul>
 
@@ -110,9 +110,10 @@
 
 <!-- Footer -->
 <footer class="mt-auto">
+    <hr/>
     <div class="container bg-white">
 
-        <hr/>
+
         <div class="row" id="contact">
             <div class="col col-12 col-sm-4 text-center">
                 Envie uma mensagem à Carla
@@ -125,7 +126,7 @@
                         <!-- <span class="input-group-text" id="inputGroup-sizing-sm">Email</span> -->
                         <input type="email"  name="email" class="form-control form-control-sm" placeholder="Email" aria-label="Email" aria-describedby="inputGroup-sizing-sm" required>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group input-group-sm mb-3">
                         <!-- <span class="input-group-text">Mensagem</span> -->
                         <textarea class="form-control"  name="message" aria-label="Mensagem" placeholder="Mensagem" required></textarea>
                     </div>

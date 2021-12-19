@@ -29,7 +29,7 @@ $this->activeMenu = 'vendedores';
         </ul>
 
     </div>
-    <div class="row">
+    <div class="row p-top">
         <div class="col col-12 col-sm-4">
             <div class="row">
                 <p class="text-center fs-5 fw-bold">Disponibilidade total</p>

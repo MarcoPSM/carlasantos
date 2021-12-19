@@ -19,7 +19,7 @@ $this->activeMenu = 'compradores';
             Comprar casa é muitas vezes a realização de um sonho. Para que o sonho se realize é necessário tomar decisões acertadas e ultrapassar obstáculos que podem surgir durante o processo. A Carla simplifica o processo permitindo aos clientes que passem de forma confortável pelas etapas necessárias tornando a experiência agradável e assim tornar o sonho realidade.
         </p>
     </div>
-    <div class="row">
+    <div class="row p-top">
         <div class="col col-12 col-sm-4">
             <div class="row">
                 <p class="text-center fs-5 fw-bold">Disponibilidade total</p>

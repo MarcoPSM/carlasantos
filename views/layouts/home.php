@@ -23,21 +23,21 @@
 
 <!-- HEADER -->
 <header class="sticky-md-top">
-    <div class="container">
+    <!-- <div class="container"> -->
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg"> <!-- navbar-light -->
+            <div class="container">
                 <a aria-current="page" href="/">
-                    <img src="img/preto1.png" width="200px">
+                    <img src="img/carlasantos-preto.png" width="200px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-weight-bold">
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($this->isActive('carla')) ? 'active' : '' ?>" aria-current="page" href="/carla"><b>Carla</b></a>
+                            <a class="link-dark nav-link <?php echo ($this->isActive('carla')) ? 'active' : '' ?>" aria-current="page" href="/carla">Carla</a>
                         </li>
                         <!--
                         <li class="nav-item">
@@ -45,30 +45,30 @@
                         </li>
                         -->
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($this->isActive('testemunhos')) ? 'active' : '' ?>" href="/testemunhos"><b>Testemunhos</b></a>
+                            <a class="link-dark nav-link <?php echo ($this->isActive('testemunhos')) ? 'active' : '' ?>" href="/testemunhos">Testemunhos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($this->isActive('vendido')) ? 'active' : '' ?>" href="/vendido"><b>Vendido</b></a>
+                            <a class="link-dark nav-link <?php echo ($this->isActive('vendido')) ? 'active' : '' ?>" href="/vendido">Vendido</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($this->isActive('vendedores')) ? 'active' : '' ?>" href="/vendedores"><b>Vendedores</b></a>
+                            <a class="link-dark nav-link <?php echo ($this->isActive('vendedores')) ? 'active' : '' ?>" href="/vendedores">Vendedores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($this->isActive('compradores')) ? 'active' : '' ?>" href="/compradores"><b>Compradores</b></a>
+                            <a class="link-dark nav-link <?php echo ($this->isActive('compradores')) ? 'active' : '' ?>" href="/compradores">Compradores</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-    </div>
+    <!-- </div> -->
 </header>
 
 <!-- HEADER -->
 
 
 <!-- CONTENT -->
-<div class="container bg-white" id="page-content" >
+<div class="container bg-white" >
     {{content}}
 </div>
 <!-- CONTENT -->
