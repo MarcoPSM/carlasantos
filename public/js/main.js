@@ -8,7 +8,7 @@ $(".nav-link").on("click", function(){
 
 let e = document.getElementsByClassName("nav-link active");
 if (e.length > 0) {
-    e[0].style.color = "#b40a31";
+    //e[0].style.color = "#b40a31";
 }
 
 /* recaptacha */
