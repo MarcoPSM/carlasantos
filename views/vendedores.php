@@ -12,7 +12,7 @@ $this->activeMenu = 'vendedores';
 
 
     <div class="row">
-        <p class="text-center fs-5">Plano de marketing - planeamento de sucesso</p>
+        <p class="text-center fs-5">Planeamento de sucesso</p>
     </div>
     <div class="row">
         <p class="text-justify fw-bold">Preparação:</p>
@@ -24,7 +24,7 @@ $this->activeMenu = 'vendedores';
         <ul>
             <li>O cliente terá a casa fotografada por um profissional com opção de um tour de vídeo pela propriedade para que os compradores locais e especialmente internacionais possam ter uma ideia melhor da casa antes de a visitarem pessoalmente.</li>
 
-            <li>O imóvel será anunciado em nos principais sites de propriedades nacionais, bem como em sites de propriedades internacionais.</li>
+            <li>O imóvel será anunciado nos principais sites de propriedades nacionais, bem como em sites de propriedades internacionais.</li>
             <li>Os eventos “casa aberta” serão agendados e realizados de acordo com sua conveniência.</li>
         </ul>
 
@@ -33,23 +33,23 @@ $this->activeMenu = 'vendedores';
         <div class="col col-12 col-sm-4">
             <div class="row">
                 <p class="text-center fs-5 fw-bold">Disponibilidade total</p>
-                <p class="text-justify">
+                <p class="text-left">
                     A disponibilidade da Carla é total, respondendo de forma imediata aos contactos dos seus clientes. Os contactos podem ser feitos por telefone, e-mail ou mensagem através do site. A Carla faz questão de manter os clientes constantemente informados ao longo de todas as etapas do processo.
                 </p>
             </div>
         </div>
         <div class="col col-12 col-sm-4">
             <div class="row">
-                <p class="text-center fs-5 fw-bold">A Arte da Negociação</p>
-                <p class="text-justify">
+                <p class="text-center fs-5 fw-bold">Transparência na Negociação</p>
+                <p class="text-left">
                     Atuar com transparência e confiança, mantendo a calma ao longo de toda a negociação. Pro atividade sugerindo estratégias para que negociações, mesmo que difíceis, se concretizem de forma lucrativa.
                 </p>
             </div>
         </div>
         <div class="col col-12 col-sm-4">
             <div class="row">
-                <p class="text-center fs-5 fw-bold">Marketing Internacional</p>
-                <p class="text-justify">
+                <p class="text-center fs-5 fw-bold">Divulgação Internacional</p>
+                <p class="text-left">
                     Investidores estrangeiros procuram imóveis nacionais, em grande parte recorrendo a plataformas na Internet. Com a Carla este fator é explorado ao maximo.
                 </p>
             </div>
