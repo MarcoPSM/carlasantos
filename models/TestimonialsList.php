@@ -13,7 +13,8 @@ class TestimonialsList extends \app\core\Model
     public function render()
     {
         $html = '<div class="p-top">';
-        $testimonials = Testimony::findAll();
+        $testimony = new Testimony();
+        $testimonials = $testimony->findAll();
         foreach ($testimonials as $testimony) {
             $html .= '<div class="col testemunho">';
             $html .= '<div class="row mt-3 justify-content-start fs-5">';

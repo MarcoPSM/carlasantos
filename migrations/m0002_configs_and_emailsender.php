@@ -18,7 +18,7 @@ class m0002_configs_and_emailsender
 
         $create_configurations = "
         CREATE TABLE configurations (
-        id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+        id serial PRIMARY KEY,
         key character varying NOT NULL,
         value character varying NOT NULL,
         descr character varying,
@@ -27,7 +27,7 @@ class m0002_configs_and_emailsender
 
         $create_send_email = "
         CREATE TABLE send_email (
-        id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+        id serial PRIMARY KEY,
         mail_to character varying NOT NULL,
         cc character varying,
         bcc character varying,

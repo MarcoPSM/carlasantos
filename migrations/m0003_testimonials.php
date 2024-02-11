@@ -10,7 +10,7 @@ class m0003_testimonials
 
         $create_testimonials = "
         CREATE TABLE testimonials (
-            id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            id serial PRIMARY KEY,
             testimony character varying NOT NULL,
             author character varying,
             date timestamp,

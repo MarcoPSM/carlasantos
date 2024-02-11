@@ -5,7 +5,7 @@ class m0001_initial {
         $db = \app\core\Application::$app->db;
         $create_users = "
         CREATE TABLE users (
-        id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+        id serial PRIMARY KEY,
         email character varying NOT NULL,
         password character varying NOT NULL,
         firstname character varying  NOT NULL,
@@ -15,7 +15,7 @@ class m0001_initial {
         )";
         $create_sentences = "
         CREATE TABLE sentences (
-            id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            id serial PRIMARY KEY,
             pt character varying NOT NULL,
             en character varying,
             fr character varying,
@@ -23,7 +23,7 @@ class m0001_initial {
         )";
         $create_contacts = "
         CREATE TABLE contacts (
-            id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            id serial PRIMARY KEY,
             email character varying NOT NULL,
             name character varying,
             subject character varying,
@@ -32,14 +32,14 @@ class m0001_initial {
         )";
         $create_newsletter_subscribers = "
         CREATE TABLE newsletter_subscribers (
-            id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            id serial PRIMARY KEY,
             email character varying NOT NULL,
             active boolean default true,
             created_at timestamp default now()
         )";
         $create_pages = "
         CREATE TABLE pages (
-            id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            id serial PRIMARY KEY,
             title integer,
             contents integer[], 
             created_at timestamp default now(),
@@ -50,7 +50,7 @@ class m0001_initial {
         )";
         $create_contents = "
         CREATE TABLE contents (
-            id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            id serial PRIMARY KEY,
             title integer,
             description integer,
             created_at timestamp default now(),
